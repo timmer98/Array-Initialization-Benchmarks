@@ -4,7 +4,7 @@ using BenchmarkDotNet.Engines;
 namespace ArrayInitializationBenchmark
 {
     [MemoryDiagnoser]
-    public class ArrayInitBenchmark
+    public class BoolArrayInit
     {
         [Params(500_000, 1_000_000)]
         public int ArraySize { get; set; }

@@ -7,7 +7,7 @@ namespace ArrayInitializationBenchmark
     {
         public static void Main()
         {
-            var summary = BenchmarkRunner.Run<ArrayInitBenchmark>();
+            var summary = BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run();
         }
     }
 }
